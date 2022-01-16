@@ -2,15 +2,17 @@ from Main import Main
 
 from tkinter import Tk
 
-try:
-    
-    view = Tk()
+if __name__ == "__main__":
 
-    app = Main(view, "./")
+    try:
+        
+        view = Tk()
 
-    app.mapping_elements()
-    
-    view.mainloop()
+        app = Main(view, "./")
 
-except Exception as error:
-    exit()
+        app.mapping_elements()
+        
+        view.mainloop()
+
+    except Exception as error:
+        exit()

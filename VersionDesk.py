@@ -4,17 +4,18 @@ from tkinter import Tk
 
 from easygui import diropenbox
 
-try:
+if __name__ == "__main__":
+    try:
     
-    pdfs = diropenbox()
+        pdfs = diropenbox()
 
-    view = Tk()
+        view = Tk()
 
-    app = Main(view, pdfs)
+        app = Main(view, pdfs)
 
-    app.mapping_elements()
-    
-    view.mainloop()
+        app.mapping_elements()
+        
+        view.mainloop()
 
-except Exception as error:
-    exit()
+    except Exception as error:
+        exit()
